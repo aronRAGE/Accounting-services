@@ -155,7 +155,7 @@ width: 40%;
 
 /*==========HERO START==========*/
 .hero{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/hero.webp);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/deco_background.webp);
     padding-top: 170px;
     padding-bottom: 95px;
 }
@@ -172,7 +172,7 @@ width: 50%;
 color: var(--text-color-white);
 margin-bottom: 80px;
 }
-.to-presentation{
+.btn{
     color: var(--text-color-white);
     background-color: var(--color-accent);
     border: 0;
@@ -180,7 +180,7 @@ margin-bottom: 80px;
     position: relative;
     z-index: 0;
 }
-.to-presentation::before{
+.btn::before{
     content:'';
 	position: absolute;
 	bottom: 0;
@@ -191,10 +191,10 @@ margin-bottom: 80px;
     transition: .3s ease-out;
    background: var(--text-color-grey-2)
 }
-.to-presentation:hover::before{
+.btn:hover::before{
     width: 100%;
 }
-.to-presentation a{
+.btn a{
     padding: 18px 50px;
     font-size: 18px;
     line-height: 25px;
@@ -374,7 +374,163 @@ margin-bottom: 80px;
 .about-us-block-to-result:hover::before{
     height: 100%;
 }
-
-
 /*==========ABOUT US END==========*/
+
+/*==========OUR CLIENTS START==========*/
+.our-clients{
+    background-color: var(--color-grey-background);
+}
+.swiper-margin{
+    margin-bottom: 50px;
+}
+.blue-button-prev::before, .blue-button-next::before{
+    width: 15px;
+    height: 15px;
+}
+.blue-button-prev, .blue-button-next{
+    color: var(--text-color-white);
+    background-color: var(--color-accent-transparence);
+    padding: 22px;
+    transition: 0.3s;
+}
+.blue-button-prev:hover, .blue-button-next:hover{
+    background-color: var(--color-accent);
+}
+.blue-pagination>.pagination-bullet-active{
+    background: var(--color-accent);
+}
+.blue-pagination>.pagination-bullet{
+    background: var(--color-accent-transparence);
+}
+/*==========OUR CLIENTS END==========*/
+
+/*==========REVIEWS START==========*/
+.reviews-content{
+    background-color: var(--color-grey-background);
+    padding: 45px 95px;
+    margin-bottom: 50px;
+}
+.reviews-comment{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+.reviews-commentator{
+    display: flex;
+    align-items: center;
+}
+.reviews-commentator-info{
+    margin-left: 35px;
+}
+.reviews-commentator-info-name{
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+.reviews-commentator-info-post{
+    font-size: 14px;
+    line-height: 19px; 
+    color: var(--text-color-grey-2); 
+}
+
+/*==========REVIEWS END==========*/
+
+/*==========CONTACT START==========*/
+.contact{
+    color: var(--text-color-white);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/deco_background.webp);
+}
+.contact-info>h2{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    margin-bottom: 60px;
+}
+.contact-info>h6{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 80px;
+}
+.contact-number-n-mail-info{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    display: flex;
+}
+.contact-number-n-mail-info>a{
+    margin-left: 15px;
+}
+.contact-form-inputs{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-label{
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.contact-form-inputs-name{
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--text-color-white);
+    padding-bottom: 15px;
+    color: var(--text-color-white);
+    margin-bottom: 45px;
+}
+.contact-form-inputs-name:focus{
+    outline: 0;
+}
+.contact-form-letter{
+    padding-bottom: 85px;
+}
+.submit-btn{
+    width: fit-content;
+    padding: 19px 40px;
+    background: var(--color-accent);
+    color: var(--text-color-white);
+    font-size: 18px;
+    line-height: 25px;
+    border: 0;
+    margin-left: auto;
+    position: relative;
+    transition: .3s;
+    z-index: 0;
+    cursor: pointer;
+}
+.submit-btn::before{
+    content:'';
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    z-index: -1;
+	width: 0;
+    height: 100%;
+    transition: .3s ease-out;
+   background: var(--text-color-grey-2)
+}
+.submit-btn:hover::before{
+    width: 100%;
+}
+
+/*==========CONTACT END==========*/
+
+/*==========FOOTER START==========*/
+.license-n-development{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0;
+}
+.license, .development{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+/*==========FOOTER END==========*/
+
 
