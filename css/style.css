@@ -1,0 +1,380 @@
+/*==========CSS RESET START==========*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==========CSS RESET END==========*/
+
+/*==========MAIN START==========*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+a,span,*::before,*::after{
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+:root{
+    --theme-color-base-hue:205;
+    --color-accent: hsl(205,100%,32%,1);
+    --color-accent-transparence: hsl(205,100%,32%,0.65);
+
+    --text-color-black-1: hsl(0,0%,13%,1);
+    --text-color-black-2: hsl(0, 0%, 20%);
+    --text-color-black-3: hsl(0,0%,0%,1);
+    --text-color-black-transparence: hsl(0,0%,0%,0.65);
+
+    --text-color-grey: hsl(0, 0%, 74%);
+    --text-color-grey-2: hsl(0, 0%, 31%);
+    --color-grey-background: hsl(0, 0%, 92%);
+    
+    --text-color-white: hsl(0,0%,100%,1);
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-padding{
+    padding: 140px 0;
+}
+/*==========MAIN TO START==========*/
+
+/*==========HEADER START==========*/
+.header{
+    padding: 25px 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+width: 40%;
+}
+.logo p{
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: var(--color-accent);
+    padding-left: 30px;
+}
+.menu-info{
+    width: 60%;
+}
+.menu-li{
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-color-black-1);
+    padding: 5px 15px;
+    transition: .3s;
+}
+.menu-li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color-black-1);
+    transition: .3s;
+}
+.menu-li:hover::before{
+    width: 100%;
+}
+.info>p, .info>a{
+    margin-left: 15px;
+    transition: .3s;
+}
+.info>p:hover, .info>a:hover{
+    color: var(--color-accent);
+}
+.company-info{
+    display: flex;
+    margin-bottom: 22px;
+    justify-content: space-between;
+}
+.menu{
+    justify-content: space-between;
+}
+.info, .company-info, .menu{
+    display: flex;
+}
+/*==========HEADER END==========*/
+
+/*==========HERO START==========*/
+.hero{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/hero.webp);
+    padding-top: 170px;
+    padding-bottom: 95px;
+}
+.hero-content{
+    margin-bottom: 70px;
+}
+.hero-content>h1{
+    font-family: 'Merriweather';
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 66px;
+width: 50%;
+color: var(--text-color-white);
+margin-bottom: 80px;
+}
+.to-presentation{
+    color: var(--text-color-white);
+    background-color: var(--color-accent);
+    border: 0;
+    transition: .3s;
+    position: relative;
+    z-index: 0;
+}
+.to-presentation::before{
+    content:'';
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    z-index: -1;
+	width: 0;
+    height: 100%;
+    transition: .3s ease-out;
+   background: var(--text-color-grey-2)
+}
+.to-presentation:hover::before{
+    width: 100%;
+}
+.to-presentation a{
+    padding: 18px 50px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.swiper-navigation{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.button-prev, .button-next{
+    color: var(--text-color-white);
+    background-color: hsl(0deg 0% 100% / 20%);
+    padding: 22px;
+    transition: 0.3s;
+}
+.button-prev:hover, .button-next:hover{
+    background-color: hsl(0deg 0% 100% / 40%);
+}
+.button-prev::before, .button-next::before{
+    width: 15px;
+    height: 15px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: hsl(0deg 0% 100% / 40%);
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 7px;
+}
+.pagination-bullet-active{
+    width: 10px;
+    height: 10px;
+    background: var(--text-color-white);
+    border-radius: 50%;
+    opacity: 1;
+    margin: 7px;
+}
+/*==========HERO END==========*/
+
+/*==========SERVICES START==========*/
+.services{
+    background-color: var(--color-grey-background);
+}
+.section-header{
+    margin-bottom: 100px;
+}
+.section-header>h4>span{
+    color: var(--color-accent);
+}
+.section-header>h2{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--text-color-grey);
+    margin-bottom: 40px;
+}
+.section-header>h4{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    color: var(--text-color-black-2);
+}
+.services-content{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.service-content-block{
+    position: relative;
+    z-index: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url(/img/service-img.webp) no-repeat;
+    transition: 0.3s;
+    width: 350px;
+    margin-bottom: 30px;
+}
+.service-content-block::before{
+    content:'';
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    z-index: -1;
+	width: 100%;
+	height: 0;
+    transition: 0.3s;
+    background: linear-gradient(0deg, rgba(0, 95, 163, 0.65), rgba(0, 95, 163, 0.65));
+}
+.service-content-block:hover::before{
+    height: 100%;
+}
+.service-content-block>a>p{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--text-color-white);
+    padding: 260px 0px 40px 30px
+}
+/*==========SERVICES END==========*/
+
+/*==========ABOUT US START==========*/
+.about-us-leftside .section-header{
+    margin-bottom: 60px;
+}
+.about-us-info>p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+.about-us-rightside{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-us-block{
+    background-color: var(--color-grey-background);
+    padding: 30px 40px;
+    transition: .3s;
+    margin-bottom: 30px;
+    width: 255px;
+}
+.about-us-block:hover{
+    transform: scale(1.05);
+    background-color: var(--color-accent);
+    color: var(--text-color-white);
+}
+.about-us-block:hover>.about-us-block-to-result{
+    background-color: var(--color-accent);
+    color: var(--text-color-white);
+}
+.about-us-block:hover>.about-us-block-to-result::before{
+    background-color: var(--text-color-white);
+    color: var(--text-color-white);
+}
+.about-us-block>h6{
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.about-us-block>p{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 45px;
+}
+.about-us-block-to-result{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-accent);
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+}
+.about-us-block-to-result::before{
+    content:'';
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    z-index: -1;
+	width: 100%;
+	height: 2px;
+    transition: 0.3s;
+    background-color: var(--color-accent);
+}
+.about-us-block-to-result:hover{
+    color: var(--color-accent)!important;
+}
+.about-us-block-to-result:hover::before{
+    height: 100%;
+}
+
+
+/*==========ABOUT US END==========*/
+
