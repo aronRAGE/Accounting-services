@@ -459,6 +459,10 @@ margin-bottom: 80px;
     font-size: 21px;
     line-height: 29px;
     display: flex;
+    transition: .3s;
+}
+.contact-number-n-mail-info:hover{
+    color: var(--color-accent);
 }
 .contact-number-n-mail-info>a{
     margin-left: 15px;
@@ -530,6 +534,13 @@ margin-bottom: 80px;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+    transition: .3s;
+}
+.license:hover{
+    color: var(--color-accent);
+}
+.development:hover .development-link>span{
+    color: var(--color-accent);
 }
 /*==========FOOTER END==========*/
 
