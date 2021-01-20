@@ -155,7 +155,7 @@ width: 40%;
 
 /*==========HERO START==========*/
 .hero{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/deco_background.webp);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/deco_background.webp);
     padding-top: 170px;
     padding-bottom: 95px;
 }
@@ -271,7 +271,7 @@ margin-bottom: 80px;
 .service-content-block{
     position: relative;
     z-index: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url(./img/service-img.webp) no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),url(../img/service-img.webp) no-repeat;
     transition: 0.3s;
     width: 350px;
     margin-bottom: 30px;
@@ -440,7 +440,7 @@ margin-bottom: 80px;
 /*==========CONTACT START==========*/
 .contact{
     color: var(--text-color-white);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/deco_background.webp);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/deco_background.webp);
 }
 .contact-info>h2{
     font-weight: 900;
