@@ -98,7 +98,7 @@ a,span,*::before,*::after{
 .logo{
 width: 40%;
 }
-.logo p{
+.logo span{
     font-family: 'Merriweather';
     font-weight: 900;
     font-size: 36px;
@@ -247,7 +247,7 @@ margin-bottom: 80px;
 .section-header{
     margin-bottom: 100px;
 }
-.section-header>h4>span{
+.section-header>h3>span{
     color: var(--color-accent);
 }
 .section-header>h2{
@@ -257,7 +257,7 @@ margin-bottom: 80px;
     color: var(--text-color-grey);
     margin-bottom: 40px;
 }
-.section-header>h4{
+.section-header>h3{
     font-weight: 900;
     font-size: 48px;
     line-height: 69px;
@@ -334,7 +334,7 @@ margin-bottom: 80px;
     background-color: var(--text-color-white);
     color: var(--text-color-white);
 }
-.about-us-block>h6{
+.about-us-block>span{
     font-weight: 900;
     font-size: 55px;
     line-height: 66px;
@@ -470,6 +470,7 @@ margin-bottom: 80px;
 .contact-form-inputs{
     display: flex;
     flex-direction: column;
+    margin-bottom: 45px;
 }
 .contact-form-label{
     margin-bottom: 15px;
@@ -485,13 +486,12 @@ margin-bottom: 80px;
     border-bottom: 1px solid var(--text-color-white);
     padding-bottom: 15px;
     color: var(--text-color-white);
-    margin-bottom: 45px;
 }
 .contact-form-inputs-name:focus{
     outline: 0;
 }
 .contact-form-letter{
-    padding-bottom: 85px;
+    height: 120px;
 }
 .submit-btn{
     width: fit-content;
